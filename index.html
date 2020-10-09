@@ -31,7 +31,7 @@
       <button type="button" class="botao-menu">
         <i class="fas fa-bars"></i>
       </button>
-      <img src="../img/EverBarros_Logos-07.png" alt="" class="miniLogo">
+      <img src="./assets/EverBarros_Logos-07.png" alt="" class="miniLogo">
       </a>
       <nav class="menu">
         <ul id='teste1'>
@@ -52,7 +52,7 @@
       </nav>
     </header>
     <div class="AreaTop">
-      <img src="../img/EverBarros_Logos-06.png" alt="" class="logo" />
+      <img src="./assets/EverBarros_Logos-06.png" alt="" class="logo" />
 
     </div>
     <section class="avisoComputador">
@@ -60,21 +60,25 @@
     </section>
     <section id="ponto1">
       <h2 class="seuEstilo">SEU ESTILO</h2>
-      <img src="../img/289-2897514_beard-and-mustache-png.png" alt="" id='imgEver'>
-      <img src="../img/289-2897514_beard-and-mustache-png.png" alt="" id='imgEver'>
-      <img src="../img/289-2897514_beard-and-mustache-png.png" alt="" id='imgEver'>
+      <p class="pPreco">CORTE - R$35</p>
+      <img src="./assets/EverCorte1.jpeg" alt="" class='imgPreco'>
+      <p class="pPreco">BARBA - R$30</p>
+      <img src="./assets/EverCorte3.jpeg" alt="" class='imgPreco'>
+      <p class="pPreco">COMBO: CORTE + BARBA - R$60</p>
+      <img src="./assets/EverCorte4.jpeg" alt="" class='imgPreco'>
+      <p class="pPreco">OBS. COMBO: 2 CORTES NO MÊS - R$30 OU 2 CORTES + BARBA NO MÊS - R$55  </p>
+      
     </section>
 
     <section id="ponto2">
-      <img src="../img/everJPEG.png" alt="" id='imgEver'>
+      <h2 class="seuEstilo">MINHA HISTÓRIA</h2>
+      <img src="./assets/EverMinhaHist.jpeg" alt="" id='imgEver'>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolor soluta. Excepturi libero voluptate
-        debitis architecto, dignissimos maiores doloremque, dolore numquam, amet molestias repudiandae eveniet commodi
-        illo harum voluptatibus iusto.
+        EM  CONSTRUÇÃO
       </p>
     </section>
     <section id="ponto3">
-      <img src="./img/Whatsapp_Artboard 1.png" class="imgAgenda" alt="">
+      <img src="./assets/Whatsapp_Artboard 1.png" class="imgAgenda" alt="">
       <a href="https://www.instagram.com/everbarroshs/"><i class="fab fa-instagram"></i>
       </a>
       <a href="https://www.facebook.com/everbarroshairstylist/"><i class="fab fa-facebook-square"></i>
@@ -113,7 +117,7 @@
         </iframe>
     </section>
     <div>
-      <a href="https://api.whatsapp.com/send?phone=+5511985913857&text=Gostaria de agendar um horário"
+      <a href="https://api.whatsapp.com/send?phone=+5511982517106&text=Olá, gostaria de agendar um horário"
         target="_blank"><i class="fab fa-whatsapp"></i>
       </a>
 
@@ -134,7 +138,7 @@
 
 
   .background {
-    background-image: url(./img/Background01.jpg);
+    background-image: url(./assets/Background01.jpg);
     background-repeat: no-repeat;
     background-position: -190px;
     background-size: cover;
@@ -255,11 +259,11 @@
   #ponto1 {
     background-color: black;
     opacity: 0.9;
-    height: 800px;
+    height: 1200px;
     margin-top: 250px;
     margin-bottom: 500px;
     text-align: center;
-    padding-top: 20px;
+    padding: 20px;
     border-radius: 15px;
   }
 
@@ -268,14 +272,32 @@
     font-family: "Poiret One", sans-serif;
     font-size: 2em;
     font-weight: normal;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     padding-top: 40px;
+  }
+
+  .imgPreco {
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+    border-radius: 300px;
+  }
+
+  .pPreco{
+    color:rgb(165, 164, 164);
+    font-family:"Poiret One", sans-serif; ;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-top-width: thin;
+    border-top-style: solid;
+    border-top-color:rgb(165, 164, 164);
+    padding: 10px;
   }
 
   #ponto2 {
     background-color: black;
     opacity: 0.9;
-    height: 600px;
+    height: 800px;
     margin-bottom: 500px;
     margin-top: 250px;
     padding: 20px;
@@ -285,9 +307,10 @@
 
   #imgEver {
     width: 200px;
-    height: 200px;
-    border-radius: 200px;
-    margin: 10px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 40px;
+    margin-top: -10px;
   }
 
   #ponto2 p {
@@ -387,8 +410,8 @@
 
   /* css base da section do mapa da google */
   #mapa {
-    background-color: #FFF;
-    opacity: 0.9;
+    background-color:rgba(255, 255, 255, 0.397);
+    opacity: 0.96;
     height: 400px;
     margin-bottom: 60px;
     margin-top: 250px;
