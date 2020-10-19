@@ -504,7 +504,11 @@
       border-radius: 100px;
     }
 
-
+@media only screen and (-webkit-min-device-pixel-ratio: 1) {
+    ::i-block-chrome, h2 {
+        color: red;
+    }
+}
 
   }
 </style>
@@ -532,45 +536,6 @@
 
   btnElement.onclick = openMenu;
   linkiElement.onclick = closeMenu;
-
-  /* funcao ios */
-  function isIOS()
-{    
-    var ua = navigator.userAgent.toLowerCase();
-
-    //Lista de dispositivos que acessar
-    var iosArray = ['iphone', 'ipod'];
-
-    var isApple = false;
-
-    //valida seu array
-    iosArray.forEach(function(item){
-
-        if (ua.indexOf(iosArray[item]) != -1)
-        {
-            isApple = true;
-        }
-
-    });
-
-    return isApple;
-}
-
-if(isIOS())
-{
-
-  console.log('NÃO É PRA APARECER')
-
-  backgroundElement.style.backgroundRepeat ='no-repeat';
-  backgroundElement.style.backgroundPosition = -190;
-  backgroundElement.style.backgroundSize = 'cover';
-  backgroundElement.style.backgroundAttachment = 'fixed';
-
-  
-  
-
-    
-}
 
 
 
