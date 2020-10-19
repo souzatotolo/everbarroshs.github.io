@@ -504,10 +504,12 @@
       border-radius: 100px;
     }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1) {
-    ::i-block-chrome, h2 {
-        color: #FFF;
-    }
+@supports (-webkit-touch-callout: none) {
+  /* CSS specific to iOS devices */ 
+  h2{
+  color: red;
+  }
+}
 }
 
   }
