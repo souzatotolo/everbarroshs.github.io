@@ -88,7 +88,7 @@
       <!-- modify this form HTML and place wherever you want your form -->
       <div class="formElements">
         <p class="contato"> CONTATO</p>
-        <form action="https://formspree.io/f/mleogylr" method="POST">
+        <form action="https://formspree.io/mjvpbgag" method="POST">
 
           <label>
             <input type="text" class="input1" name="_replyto" placeholder="Digite aqui seu e-mail">
@@ -513,6 +513,9 @@
   var btnElement = document.querySelector('.botao-menu');
   var x = document.querySelector(".menu");
   var linkiElement = document.getElementById('teste1');
+  var backgroundElement = document.querySelector('.background');
+
+
   function openMenu() {
     if (x.style.display === "block") {
       x.style.display = "none";
@@ -530,6 +533,44 @@
   btnElement.onclick = openMenu;
   linkiElement.onclick = closeMenu;
 
+  /* funcao ios */
+  function isIOS()
+{    
+    var ua = navigator.userAgent.toLowerCase();
+
+    //Lista de dispositivos que acessar
+    var iosArray = ['iphone', 'ipod'];
+
+    var isApple = false;
+
+    //valida seu array
+    iosArray.forEach(function(item){
+
+        if (ua.indexOf(iosArray[item]) != -1)
+        {
+            isApple = true;
+        }
+
+    });
+
+    return isApple;
+}
+
+if(isIOS())
+{
+
+  console.log('NÃO É PRA APARECER')
+
+  backgroundElement.style.backgroundRepeat ='no-repeat';
+  backgroundElement.style.backgroundPosition = -190;
+  backgroundElement.style.backgroundSize = 'cover';
+  backgroundElement.style.backgroundAttachment = 'fixed';
+
+  
+  
+
+    
+}
 
 
 
